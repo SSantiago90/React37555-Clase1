@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ejemplo de formulario HTML con JS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afterclass Coderhouse</title>
-    <!-- TODO: importar CSS -->    
-    <!-- ................ -->
+    <!-- TODO: importar CSS -->        
     
-    <!-- TODO: incluir nuestro script JS -->    
-    <!-- ................ -->
+    <!-- TODO: incluir nuestro script JS -->    ´
+    
 </head>
 <body>
     <header>
-        <h1>Afterclass Coderhouse</h1>
-        <h3><i>Bienvenidos al primer afterclass! ⚛</i></h3>
+        <h1>ReactJS Coderhouse</h1>
+        <h3><i>Bienvenidos a la primer clase! ⚛</i></h3>
     </header>
     <main>
         <section>
             <form id="loginForm">
+
                 <div class="img-rounded">
                     <!-- TODO: importar imagen -->
-                    <img src="" alt="Avatar de usuario">
+                    <img src="" alt="">
                 </div>
                 <h1>Ingresá a tu cuenta</h1>
 
                 <formfield>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="email">
+                    <input type="text" id="email" name="email" placeholder="email">
                 </formfield>
 
                 <formfield>
@@ -35,18 +35,16 @@
                     <input type="password" id="password" name="password" placeholder="contraseña">
                 </formfield>
 
-            
-
                 <div class="btn-group">
                     <button type="submit">Ingresar</button>
-                    <button>Cancelar</button>
+                    <button type="reset">Cancelar</button>
                 </div>  
                 
             </form>
         </section>
 
-        <section>
-            <form id="submitForm">          
+       <section id="user_section" style="display: none">
+            <form id="stringForm">          
                 <small>tip: no te olvides revisar la consola 🤫</small>
                 <h1>Convertir texto en Array</h1>
             
@@ -59,7 +57,7 @@
                     <button type="submit">Convertir en Array</button>               
                 </div>                  
             </form>
-        </section>
+        </section> 
     </main>
 </body>
 </html>
