@@ -4,24 +4,25 @@ console.log(
 );
 
 // TODO: Agregar un "event listener" a un evento al elemento del DOM
-/* obtengo un elemento del DOM */
 const miFormulario = document.querySelector("#loginForm");
-console.log(miFormulario);
 
-/* Agregamos un event listener al formulario de login */
 miFormulario.addEventListener("submit", (evt) => {
   evt.preventDefault();
-  console.log(evt.target);
+  let formDOMnode = evt.target;
+  let inputEmail = formDOMnode.querySelector("#email-input");
+  let inputPassword = formDOMnode.querySelector("#password-input");
+  if (inputEmail.value === "" && inputPassword.value === "")
+    formularioArray.style.display = "inherit";
+  else console.error("Datos de acceso incorrectos");
 });
 
-/* Mostrar por consola el username y contraseña */
+const formularioArray = document.querySelector("#arrayForm");
 
-/* SI usuario="coder" Y contraseña="37555" -> mostrar formulario 2 */
+formularioArray.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  let formDOMnode = evt.target;
+  let inputText = formDOMnode.querySelector("#array-input").value;
+  let splitTexto = inputText.split(" ");
 
-function handleSubmitForm(event) {
-  // TODO2: Convertir el input en un array de caracteres
-  // Javascript automáticamente recibe el parametro del evento
-  // el "target" de el evento que se desencadenó, es el elemento del DOM donde se originó el evento
-  /* Obtenemos el "input" ingresado por el usuario  */
-  /*  dividimos nuestro String en un array, separando por espacios y lo imprimimos en consola */
-}
+  console.log(splitTexto);
+});
